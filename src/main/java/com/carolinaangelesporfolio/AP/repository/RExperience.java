@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface IExperience extends JpaRepository<Experience, Long>{
+public interface RExperience extends JpaRepository<Experience, Long>{
     //?? supongo que hace lo q dice el nombre. Son funciones aparte del crud. opcional es xq es posible q lo encuentre o no.
     public Optional<Experience> findByJob(String job);
     public boolean existsByJob(String job);
