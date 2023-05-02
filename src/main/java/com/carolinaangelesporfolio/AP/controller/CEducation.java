@@ -1,7 +1,7 @@
 package com.carolinaangelesporfolio.AP.controller;
 
-import com.carolinaangelesporfolio.AP.entity.Experience;
-import com.carolinaangelesporfolio.AP.service.SExperience;
+import com.carolinaangelesporfolio.AP.entity.Education;
+import com.carolinaangelesporfolio.AP.service.SEducation;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -16,45 +16,43 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("experience") //ruta experience localhost:8080/experience
+@RequestMapping("education") //ruta experience localhost:8080/experience
 @CrossOrigin(origins = "localhost:4200") //se relaciona con esta pagina
-public class CExperience{
+public class CEducation {
     
-    //usa los metodos del servicio
+     //usa los metodos del servicio
    @Autowired
-   SExperience sExperience;
+   SEducation sEducation;
    
-   @GetMapping("/experiences")
+   @GetMapping("/lista")
    @ResponseBody
-   public List<Experience> getExperiences(){
-       return sExperience.getExperiences();
+   public List<Education> allEducations(){
+       return sEducation.getEducations();
    }
    
-   @GetMapping("/get/{id}")
+   @GetMapping("/detalles/{id}")
    @ResponseBody
-   public Experience getExperience(@PathVariable Long id){
-       return sExperience.findExperience(id);
+   public Education userEducation(@PathVariable Long id){
+       return sEducation.findEducation(id);
    }
    
    //podes hacer este metodo void
-   @PostMapping("/add")
-   public String addExperience (@RequestBody Experience exp){
-       sExperience.addExperience(exp);
+   @PostMapping("/agregar")
+   public String addEducation (@RequestBody Education exp){
+       sEducation.addEducation(exp);
        return "Added successfully.";
    }
    
-   @PutMapping("/edit")
-   public String editExperience (@RequestBody Experience exp){
-       sExperience.editExperience(exp);
+   @PutMapping("/editar")
+   public String editEducation (@RequestBody Education exp){
+       sEducation.editEducation(exp);
        return "Edited successfully.";
    }
    
-   @DeleteMapping("/delete/{id}")
-   public String deleteExperience (@PathVariable Long id){
-       sExperience.deleteExperience(id);
+   @DeleteMapping("/eliminar/{id}")
+   public String deleteEducation (@PathVariable Long id){
+       sEducation.deleteEducation(id);
        return "Added successfully.";
    }
-   
-   
-   
+    
 }
