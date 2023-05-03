@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("education") //ruta experience localhost:8080/experience
+@RequestMapping("education") 
 @CrossOrigin(origins = "localhost:4200") //se relaciona con esta pagina
 public class CEducation {
     
-     //usa los metodos del servicio
+   //usa los metodos del servicio
    @Autowired
    SEducation sEducation;
    

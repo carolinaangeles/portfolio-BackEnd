@@ -1,5 +1,6 @@
 package com.carolinaangelesporfolio.AP.entity;
 
+import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,16 +18,31 @@ public class Education {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
+    @Basic
     private String title;
+    @Basic
     private String institution;
+    @Basic
     @Temporal (TemporalType.DATE)
     private Date startDate;
+    @Basic
     @Temporal (TemporalType.DATE)
     private Date endDate;
-    @Lob //max 255 varchar
+    @Basic
     private String url;
-    private Long idPerson;
+    
+    Education(){
+    }
+
+    public Education(long id, String title, String institution, Date startDate, Date endDate, String url) {
+        this.id = id;
+        this.title = title;
+        this.institution = institution;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.url = url;
+    }
     
     
     

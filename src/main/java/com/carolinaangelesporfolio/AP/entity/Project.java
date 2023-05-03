@@ -1,7 +1,5 @@
-
 package com.carolinaangelesporfolio.AP.entity;
 
-
-public class Account {
+public class Project {
     
 }

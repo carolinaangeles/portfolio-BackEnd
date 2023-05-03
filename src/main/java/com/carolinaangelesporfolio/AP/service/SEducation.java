@@ -13,14 +13,19 @@ import org.springframework.beans.factory.annotation.Autowired;
  *
  * @author usuario
  */
-public class SEducation {
+public class SEducation{
     
     @Autowired //este servicio se relaciona con el repo de experiencia
-    REducation rEducation; //se reescribe lo q se trae de repo experiencia (Metodos JPA)
+    private REducation rEducation; //se reescribe lo q se trae de repo experiencia (Metodos JPA)
 
     public List<Education> getEducations(){
         List <Education>listEducations=rEducation.findAll(); //metodos JPA, de extends...
         return listEducations;
+    }
+    
+    public Education findEducation(Long id) {
+        Education ed = rEducation.findById(id).orElse(null);
+        return ed;
     }
 
     //este tmb sirve para editar
@@ -34,11 +39,6 @@ public class SEducation {
     
     public void deleteEducation(Long id) {
         rEducation.deleteById(id);
-    }
-    
-    public Education findEducation(Long id) {
-        Education ed = rEducation.findById(id).orElse(null);
-        return ed;
     }
     
 }
