@@ -24,18 +24,16 @@ public class Education {
     @Basic
     private String institution;
     @Basic
-    @Temporal (TemporalType.DATE)
-    private Date startDate;
+    private String startDate;
     @Basic
-    @Temporal (TemporalType.DATE)
-    private Date endDate;
+    private String endDate;
     @Basic
     private String url;
     
     Education(){
     }
 
-    public Education(long id, String title, String institution, Date startDate, Date endDate, String url) {
+    public Education(long id, String title, String institution, String startDate, String endDate, String url) {
         this.id = id;
         this.title = title;
         this.institution = institution;
@@ -43,7 +41,6 @@ public class Education {
         this.endDate = endDate;
         this.url = url;
     }
-    
     
     
 }
