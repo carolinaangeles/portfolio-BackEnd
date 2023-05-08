@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 //@RequestMapping("estudio") 
-@CrossOrigin(origins = "http://localhost:4200/") //se relaciona con esta pagina
+@CrossOrigin(origins = "http://localhost:8080/") //se relaciona con esta pagina
 public class CEducation {
     
    @Autowired
@@ -43,6 +43,12 @@ public class CEducation {
        interfaceSEducation.addEducation(ed);
    }
    
+   @PutMapping("/estudio/editar")
+   public void editarPersona(@RequestBody Education ed){
+        interfaceSEducation.editEducation(ed);
+   }
+   
+   /*
    @PutMapping("/estudio/editar/{id}")
    public Education editEducation (@PathVariable Long id,
                                 @RequestParam("titulo") String newTitle,
@@ -61,6 +67,7 @@ public class CEducation {
        interfaceSEducation.editEducation(ed);
        return ed;
    }
+   */
    
    @DeleteMapping("/estudio/eliminar/{id}")
    public void deleteEducation (@PathVariable Long id){
