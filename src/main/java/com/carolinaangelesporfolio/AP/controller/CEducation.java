@@ -47,9 +47,24 @@ public class CEducation {
    public void editarPersona(@RequestBody Education ed){
         interfaceSEducation.editEducation(ed);
    }
-    */
+   */
+   
+   @PutMapping("estudio/editar")
+    public void editar(@RequestBody Education ed ){
+        
+       Education edEdit= interfaceSEducation.getEducation( ed.getId() );
+       
+       edEdit.setTitle( ed.getTitle() );
+       edEdit.setInstitution( ed.getInstitution() );
+       edEdit.setStartDate( ed.getStartDate() );
+       edEdit.setEndDate( ed.getEndDate() );
+       edEdit.setUrl( ed.getUrl() );
+        
+       interfaceSEducation.editEducation(edEdit);
+    }
    
    
+   /*
    @PutMapping("/estudio/editar/{id}")
    public Education editEducation (@PathVariable Long id,
                                 @RequestParam("titulo") String newTitle,
@@ -68,7 +83,7 @@ public class CEducation {
        interfaceSEducation.editEducation(ed);
        return ed;
    }
-
+   */
    
    @DeleteMapping("/estudio/eliminar/{id}")
    public void deleteEducation (@PathVariable Long id){
