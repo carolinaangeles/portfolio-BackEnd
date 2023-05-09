@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://carolinaangelesportfolio.onrender.com") //se relaciona con esta pagina
+@CrossOrigin(origins = "https://carolina-angeles.web.app") //se relaciona con esta pagina
 public class CExperience{
     /*
     //usa los metodos del servicio

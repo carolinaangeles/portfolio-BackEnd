@@ -19,8 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@RequestMapping("estudio") 
-@CrossOrigin(origins = "https://carolinaangelesportfolio.onrender.com") //se relaciona con esta pagina
+@CrossOrigin(origins = "https://carolina-angeles.web.app") //se relaciona con esta pagina
 public class CEducation {
     
    @Autowired
