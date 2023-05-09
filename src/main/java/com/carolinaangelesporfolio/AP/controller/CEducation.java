@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 //@RequestMapping("estudio") 
-@CrossOrigin(origins = "http://localhost:8080/") //se relaciona con esta pagina
+@CrossOrigin(origins = "https://carolinaangelesportfolio.onrender.com") //se relaciona con esta pagina
 public class CEducation {
     
    @Autowired
