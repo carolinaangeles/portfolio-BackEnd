@@ -42,13 +42,13 @@ public class CEducation {
        interfaceSEducation.addEducation(ed);
    }
    
-   /*
+   
    @PutMapping("/estudio/editar")
    public void editarPersona(@RequestBody Education ed){
         interfaceSEducation.editEducation(ed);
    }
-   */
    
+   /*
    @PutMapping("estudio/editar")
     public void editar(@RequestBody Education ed ){
         
@@ -62,7 +62,7 @@ public class CEducation {
         
        interfaceSEducation.editEducation(edEdit);
     }
-   
+   */
    
    /*
    @PutMapping("/estudio/editar/{id}")
