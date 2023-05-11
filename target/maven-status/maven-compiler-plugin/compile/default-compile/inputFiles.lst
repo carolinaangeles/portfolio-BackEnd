@@ -8,11 +8,14 @@ C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\entity\HardSkill.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\service\SExperience.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\repository\RSoftSkill.java
+C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\controller\CUser.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\service\SHardSkill.java
+C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\service\SUser.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\entity\Project.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\repository\RHardSkill.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\entity\Education.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\controller\CExperience.java
+C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\repository\RUser.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\service\ISEducation.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\controller\CHardSkill.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\controller\CAboutMe.java
@@ -24,4 +27,5 @@ C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\service\SAboutMe.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\WebConfig.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\service\SSoftSkill.java
+C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\entity\User.java
 C:\Base de Datos\portfolio-BackEnd\src\main\java\com\carolinaangelesporfolio\AP\service\SProject.java

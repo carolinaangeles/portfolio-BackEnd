@@ -5,6 +5,7 @@ import com.carolinaangelesporfolio.AP.service.SUser;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,32 +17,31 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/user")
+//@RequestMapping("/user")
+@CrossOrigin(origins = "https://carolina-angeles.web.app")
 public class CUser {
     
-    @Autowired
     private SUser sUser;
     
-    
-    @GetMapping("/estudios")
+    @GetMapping("/users")
    //@ResponseBody
    public List<User> getUsers(){
        return sUser.getUsers();
    }
    
-   @GetMapping("/estudio/{id}") //link = endpoint
+   @GetMapping("/user/{id}") //link = endpoint
    //@ResponseBody
    public User getUser(@PathVariable Long id){
        return sUser.getUser(id);
    }
    
-   @PostMapping("/estudio/agregar")
+   @PostMapping("/user/agregar")
    public void createUser (@RequestBody User u){
        sUser.createUser(u);
    }
    
    
-   @PutMapping("/estudio/editar")
+   @PutMapping("/user/editar")
    public void editUser(@RequestBody User u){
         sUser.editUser(u);
    }

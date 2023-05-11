@@ -5,6 +5,7 @@ com\carolinaangelesporfolio\AP\service\SHardSkill.class
 com\carolinaangelesporfolio\AP\repository\RHardSkill.class
 com\carolinaangelesporfolio\AP\entity\AboutMe.class
 com\carolinaangelesporfolio\AP\entity\HardSkill.class
+com\carolinaangelesporfolio\AP\service\SUser.class
 com\carolinaangelesporfolio\AP\controller\CAboutMe.class
 com\carolinaangelesporfolio\AP\repository\RExperience.class
 com\carolinaangelesporfolio\AP\repository\RProject.class
@@ -16,11 +17,14 @@ com\carolinaangelesporfolio\AP\service\SSoftSkill.class
 com\carolinaangelesporfolio\AP\service\SProject.class
 com\carolinaangelesporfolio\AP\controller\CHardSkill.class
 com\carolinaangelesporfolio\AP\WebConfig.class
+com\carolinaangelesporfolio\AP\controller\CUser.class
+com\carolinaangelesporfolio\AP\repository\RUser.class
 com\carolinaangelesporfolio\AP\repository\RSoftSkill.class
 com\carolinaangelesporfolio\AP\repository\REducation.class
 com\carolinaangelesporfolio\AP\repository\RAboutMe.class
 com\carolinaangelesporfolio\AP\ApApplication.class
 com\carolinaangelesporfolio\AP\controller\CProject.class
+com\carolinaangelesporfolio\AP\entity\User.class
 com\carolinaangelesporfolio\AP\entity\SoftSkill.class
 com\carolinaangelesporfolio\AP\controller\CSoftSkill.class
 com\carolinaangelesporfolio\AP\controller\CEducation.class

@@ -40,8 +40,10 @@ public class SUser {
         rUser.save(user);
     }
     
+    /*
     public User login(String email, String password){
        return rUser.findByEmailAndPassword(email, password);
         
     }
+*/
 }
