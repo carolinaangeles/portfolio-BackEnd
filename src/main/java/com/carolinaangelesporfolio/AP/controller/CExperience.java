@@ -16,8 +16,80 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://carolina-angeles.web.app") //se relaciona con esta pagina
+@CrossOrigin(origins = "https://carolina-angeles.web.app")
 public class CExperience{
+    
+        
+   @Autowired
+   SExperience sExperience;
+   
+   @GetMapping("/experiencias")
+   //@ResponseBody
+   public List<Experience> getExperiences(){
+       return sExperience.getExperiences();
+   }
+   
+   @GetMapping("/experiencia/{id}") //link = endpoint
+   //@ResponseBody
+   public Experience getExperience(@PathVariable Long id){
+       return sExperience.getExperience(id);
+   }
+   
+   @PostMapping("/experiencia/agregar")
+   public void addExperience (@RequestBody Experience exp){
+       sExperience.addExperience(exp);
+   }
+   
+   
+   @PutMapping("/experiencia/editar")
+   public void editExperience(@RequestBody Experience exp){
+        sExperience.editExperience(exp);
+   }
+   
+   @DeleteMapping("/experiencia/eliminar/{id}")
+   public void deleteExperience (@PathVariable Long id){
+       sExperience.deleteExperience(id);
+   }
+   
+   /*
+   @PutMapping("estudio/editar")
+    public void editar(@RequestBody Education ed ){
+        
+       Education edEdit= interfaceSEducation.getEducation( ed.getId() );
+       
+       edEdit.setTitle( ed.getTitle() );
+       edEdit.setInstitution( ed.getInstitution() );
+       edEdit.setStartDate( ed.getStartDate() );
+       edEdit.setEndDate( ed.getEndDate() );
+       edEdit.setUrl( ed.getUrl() );
+        
+       interfaceSEducation.editEducation(edEdit);
+    }
+   */
+   
+   /*
+   @PutMapping("/estudio/editar/{id}")
+   public Education editEducation (@PathVariable Long id,
+                                @RequestParam("titulo") String newTitle,
+                                @RequestParam("institucion") String newInstitution,
+                                @RequestParam("inicio") String newStartDate,
+                                @RequestParam("finalizacion") String newEndDate,
+                                @RequestParam("url") String newUrl){ //@RequestBody Education exp
+       //interfaceSEducation.editEducation(exp);
+       Education ed= interfaceSEducation.getEducation(id);
+       //esto puede ir en un nuevo metodo en service para desacoplar
+       ed.setTitle(newTitle);
+       ed.setInstitution(newInstitution);
+       ed.setStartDate(newStartDate);
+       ed.setEndDate(newEndDate);
+       ed.setUrl(newUrl);
+       interfaceSEducation.editEducation(ed);
+       return ed;
+   }
+   */
+   
+  
+    
     /*
     //usa los metodos del servicio
    @Autowired
