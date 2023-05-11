@@ -44,7 +44,7 @@ public class CEducation {
    
    
    @PutMapping("/estudio/editar")
-   public void editarPersona(@RequestBody Education ed){
+   public void editEducation(@RequestBody Education ed){
         interfaceSEducation.editEducation(ed);
    }
    

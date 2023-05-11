@@ -16,49 +16,37 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/user")
 public class CUser {
     
     @Autowired
     private SUser sUser;
     
-    /*
     
-    @PostMapping("/nuevaPersona/persona")
-    public void agregar(@RequestBody User user){
-        sUser.createUser(user);
-    }
-    
-    
-    @GetMapping("verPersona/personas")
-    @ResponseBody
-    public List<User> Listar(){
-     
+    @GetMapping("/estudios")
+   //@ResponseBody
+   public List<User> getUsers(){
        return sUser.getUsers();
-    }
+   }
+   
+   @GetMapping("/estudio/{id}") //link = endpoint
+   //@ResponseBody
+   public User getUser(@PathVariable Long id){
+       return sUser.getUser(id);
+   }
+   
+   @PostMapping("/estudio/agregar")
+   public void createUser (@RequestBody User u){
+       sUser.createUser(u);
+   }
+   
+   
+   @PutMapping("/estudio/editar")
+   public void editUser(@RequestBody User u){
+        sUser.editUser(u);
+   }
     
-    @DeleteMapping("/borrarPersona/{id}")
-    public void borrar(@PathVariable long id){
-        
-     sUser.deleteUsers(id);
-    }
-    
-    
-    @PutMapping("/editarPersona")
-    public void editar(@RequestBody Persona pers){
-        
-        sUser.editarPersona(pers);
-    }
-    
-    
-    @GetMapping("verUnaPersona/{id}")
-    @ResponseBody
-    public Persona verUno(@PathVariable int id){
-    
-        
-        return sUser.buscarPersona(id);
-    }
-    
-    */
+    /*
     
     @PostMapping("/login")
     public boolean login(@RequestBody User user){
@@ -67,6 +55,6 @@ public class CUser {
             return true;
         else
             return false;
-    }
+    }*/
     
 }

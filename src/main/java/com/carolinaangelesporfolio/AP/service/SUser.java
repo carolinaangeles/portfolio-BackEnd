@@ -3,16 +3,17 @@ package com.carolinaangelesporfolio.AP.service;
 import com.carolinaangelesporfolio.AP.entity.User;
 import com.carolinaangelesporfolio.AP.repository.RUser;
 import java.util.List;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class SUser {
     
-    @Autowired
-    public RUser rUser;
+    private final RUser rUser;
     
-    public List<User> getUser(){
+    public List<User> getUsers(){
         
         return rUser.findAll();
     }
@@ -29,7 +30,7 @@ public class SUser {
     }
     
     
-    public User findUser(long id){
+    public User getUser(long id){
     
         return rUser.findById(id).orElse(null);
     }
@@ -38,8 +39,7 @@ public class SUser {
     
         rUser.save(user);
     }
-
-
+    
     public User login(String email, String password){
        return rUser.findByEmailAndPassword(email, password);
         
