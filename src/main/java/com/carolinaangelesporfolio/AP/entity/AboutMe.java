@@ -15,15 +15,24 @@ public class AboutMe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Basic
+    @Basic 
+    private String profilePicture;
+    @Basic 
+    private String fullName;
+    @Basic 
+    private String professionalProfile;
     @Lob
     private String description;
+
     
     AboutMe(){
     }
     
-    AboutMe(long id, String description){
+    AboutMe(long id, String description, String profilePicture, String fullName, String professionalProfile){
         this.id = id;
         this.description = description;
+        this.description = profilePicture;
+        this.description = fullName;
+        this.description = professionalProfile;
     }
 }

@@ -9,6 +9,7 @@ com\carolinaangelesporfolio\AP\service\SUser.class
 com\carolinaangelesporfolio\AP\controller\CAboutMe.class
 com\carolinaangelesporfolio\AP\repository\RExperience.class
 com\carolinaangelesporfolio\AP\repository\RProject.class
+com\carolinaangelesporfolio\AP\repository\RSocialMedia.class
 com\carolinaangelesporfolio\AP\entity\Project.class
 com\carolinaangelesporfolio\AP\entity\Experience.class
 com\carolinaangelesporfolio\AP\controller\CExperience.class
@@ -22,7 +23,10 @@ com\carolinaangelesporfolio\AP\repository\RUser.class
 com\carolinaangelesporfolio\AP\repository\RSoftSkill.class
 com\carolinaangelesporfolio\AP\repository\REducation.class
 com\carolinaangelesporfolio\AP\repository\RAboutMe.class
+com\carolinaangelesporfolio\AP\controller\CSocialMedia.class
 com\carolinaangelesporfolio\AP\ApApplication.class
+com\carolinaangelesporfolio\AP\entity\SocialMedia.class
+com\carolinaangelesporfolio\AP\service\SSocialMedia.class
 com\carolinaangelesporfolio\AP\controller\CProject.class
 com\carolinaangelesporfolio\AP\entity\User.class
 com\carolinaangelesporfolio\AP\entity\SoftSkill.class

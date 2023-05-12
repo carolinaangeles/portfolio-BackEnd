@@ -1,4 +1,3 @@
-
 package com.carolinaangelesporfolio.AP.entity;
 
 import jakarta.persistence.Entity;
@@ -37,9 +36,7 @@ public class Experience {
         this.description=description;
         this.idPerson=idPerson;
     }
-    
-    
-    
-    
-    
 }
+    
+    
+    
