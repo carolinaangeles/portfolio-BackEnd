@@ -2,11 +2,13 @@ package com.carolinaangelesporfolio.AP.service;
 
 import com.carolinaangelesporfolio.AP.entity.Education;
 import com.carolinaangelesporfolio.AP.repository.REducation;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@Transactional
 public class SEducation implements ISEducation{
     
     @Autowired 

@@ -2,12 +2,13 @@ package com.carolinaangelesporfolio.AP.service;
 
 import com.carolinaangelesporfolio.AP.entity.User;
 import com.carolinaangelesporfolio.AP.repository.RUser;
+import jakarta.transaction.Transactional;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class SUser {
     

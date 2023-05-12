@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -24,13 +22,11 @@ public class CExperience{
    SExperience sExperience;
    
    @GetMapping("/experiencias")
-   //@ResponseBody
    public List<Experience> getExperiences(){
        return sExperience.getExperiences();
    }
    
    @GetMapping("/experiencia/{id}") //link = endpoint
-   //@ResponseBody
    public Experience getExperience(@PathVariable Long id){
        return sExperience.getExperience(id);
    }
@@ -39,7 +35,6 @@ public class CExperience{
    public void addExperience (@RequestBody Experience exp){
        sExperience.addExperience(exp);
    }
-   
    
    @PutMapping("/experiencia/editar")
    public void editExperience(@RequestBody Experience exp){

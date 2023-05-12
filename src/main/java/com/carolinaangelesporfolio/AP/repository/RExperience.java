@@ -6,8 +6,8 @@ package com.carolinaangelesporfolio.AP.repository;
 //cada clase debe tener @Repository.
 //se crea una interface no una clase.
 //I de interface en el nombre. 
-
 //JPA trae crud
+
 import com.carolinaangelesporfolio.AP.entity.Experience;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
