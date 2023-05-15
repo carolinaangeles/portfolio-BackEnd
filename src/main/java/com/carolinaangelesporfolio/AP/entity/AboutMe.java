@@ -21,7 +21,6 @@ public class AboutMe {
     private String fullName;
     @Basic 
     private String professionalProfile;
-    @Lob
     private String description;
 
     

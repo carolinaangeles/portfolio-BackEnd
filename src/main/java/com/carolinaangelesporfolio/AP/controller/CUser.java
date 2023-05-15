@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 //@RequestMapping("/user")
-@CrossOrigin(origins = "https://carolina-angeles.web.app")
+@CrossOrigin(origins = {"https://carolina-angeles.web.app"})
 public class CUser {
     
     private SUser sUser;

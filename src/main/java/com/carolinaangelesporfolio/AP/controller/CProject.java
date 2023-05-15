@@ -1,8 +1,6 @@
 package com.carolinaangelesporfolio.AP.controller;
 
-import com.carolinaangelesporfolio.AP.entity.Experience;
 import com.carolinaangelesporfolio.AP.entity.Project;
-import com.carolinaangelesporfolio.AP.service.SExperience;
 import com.carolinaangelesporfolio.AP.service.SProject;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://carolina-angeles.web.app")
+@CrossOrigin(origins = {"https://carolina-angeles.web.app"})
 public class CProject {
    @Autowired
    SProject sProject;

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://carolina-angeles.web.app")
+@CrossOrigin(origins = {"https://carolina-angeles.web.app"})
 public class CExperience{
     
         
