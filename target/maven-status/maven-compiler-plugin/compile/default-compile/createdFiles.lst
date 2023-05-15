@@ -15,10 +15,12 @@ com\carolinaangelesporfolio\AP\entity\Experience.class
 com\carolinaangelesporfolio\AP\controller\CExperience.class
 com\carolinaangelesporfolio\AP\service\SEducation.class
 com\carolinaangelesporfolio\AP\service\SSoftSkill.class
+com\carolinaangelesporfolio\AP\CorsConfig$1.class
 com\carolinaangelesporfolio\AP\service\SProject.class
 com\carolinaangelesporfolio\AP\controller\CHardSkill.class
 com\carolinaangelesporfolio\AP\WebConfig.class
 com\carolinaangelesporfolio\AP\controller\CUser.class
+com\carolinaangelesporfolio\AP\CorsConfig.class
 com\carolinaangelesporfolio\AP\repository\RUser.class
 com\carolinaangelesporfolio\AP\repository\RSoftSkill.class
 com\carolinaangelesporfolio\AP\repository\REducation.class
