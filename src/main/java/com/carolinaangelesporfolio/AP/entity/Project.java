@@ -14,14 +14,10 @@ public class Project {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Basic
     private String title;
-    @Basic
     private String image;
-    @Basic
     //@Max(value=150,message="Máximo de caracteres permitidos:150")
     private String description;
-    @Basic
     private String url;
     
     Project(){
